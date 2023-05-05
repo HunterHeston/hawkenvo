@@ -4,7 +4,243 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>HawkenVO</title>
+    <link rel="stylesheet" href="../dist/output.css" />
+    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="global.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body></body>
+  <body class="px-4 sm:px-20 bg-violet-50">
+    <div class="flex justify-between py-7 text-xl">
+      <p class="flex whitespace-nowrap items-center">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z"
+          />
+        </svg>
+        <span
+          class="ml-2 font-bold text-transparent bg-clip-text bg-gradient-to-br from-purple-600 to-yellow-500"
+          >Cheyenne Hawken</span
+        >
+      </p>
+      <div class="hidden sm:block">
+        <p class="flex items-center">
+          <a href="mailto:hello@hawkenvo.com" target="_blank" class="mr-1"
+            >hello@hawkenvo.com</a
+          >
+          <svg
+            class="w-5 h-5"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"
+            />
+          </svg>
+        </p>
+      </div>
+    </div>
+    <header class="sm:pt-24 flex flex-col sm:flex-row mb-16 sm:mb-36">
+      <!-- content col -->
+      <div class="sm:w-1/2">
+        <p class="mb-8 hidden sm:flex">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
+            />
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
+            />
+          </svg>
+
+          <span class="ml-2 font-bold">San Francisco, California</span>
+        </p>
+        <h1 class="text-3xl sm:text-6xl whitespace-nowrap mb-4 sm:mb-0">
+          <span class="hidden sm:block">Hello,</span
+          ><span class="sm:hidden">Hello! I'm Cheyenne</span>
+        </h1>
+        <h2 class="text-3xl sm:text-6xl mb-8 hidden sm:block">
+          I'm Cheyenne Hawken
+        </h2>
+        <p class="pt-2 mb-10 sm:mb-32 sm:w-3/4 leading-loose">
+          I believe that stories are worth sharing. That we can learn from each
+          other. The human voice is the most powerful tool we have to connect
+          with others.
+        </p>
+        <!-- image visible on mobile -->
+        <div class="w-full flex sm:hidden justify-center mb-12">
+          <div
+            class="rounded-full overflow-hidden w-32 h-32 flex justify-center items-center"
+          >
+            <img
+              class="h-auto w-auto"
+              src="cheyenne.jpeg"
+              alt="cheyenne hawken"
+            />
+          </div>
+        </div>
+        <!-- social list -->
+        <ul class="flex">
+          <li class="flex items-center">
+            <a
+              href="mailto:hello@hawkenvo.com"
+              target="_blank"
+              class="mr-1 font-bold"
+              >Email</a
+            >
+            <svg
+              class="w-5 h-5"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"
+              />
+            </svg>
+          </li>
+          <li class="ml-10 flex items-center">
+            <a
+              href="https://www.linkedin.com/in/cheyenne-hawken-151969251/"
+              target="_blank"
+              class="mr-1 font-bold"
+              >LinkedIn</a
+            >
+            <svg
+              class="w-5 h-5"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"
+              />
+            </svg>
+          </li>
+          <li class="ml-10 flex items-center">
+            <span class="mr-1 font-bold hover:cursor-not-allowed">Demo</span>
+            <svg
+              class="w-5 h-5"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"
+              />
+            </svg>
+          </li>
+        </ul>
+      </div>
+      <!-- img col, hidden on mobile-->
+      <div class="w-1/2 hidden sm:flex justify-center">
+        <div
+          class="rounded-full overflow-hidden w-96 h-96 flex justify-center items-center"
+        >
+          <img
+            class="h-auto w-auto"
+            src="cheyenne.jpeg"
+            alt="cheyenne hawken"
+          />
+        </div>
+      </div>
+    </header>
+    <main>
+      <h2 class="text-2xl mb-7">A little about me</h2>
+      <p class="leading-loose sm:w-2/3 mb-4">
+        I'm still building out my demo. And I'm excited to share it with you as
+        soon as it's ready! In the meantime, here's a little about me. Until
+        then, if you would like to reach out please use the contact form bellow.
+      </p>
+      <p class="leading-loose sm:w-2/3">
+        I studied voice over at the
+        <a
+          class="text-blue-800 visited:text-purple-800 hover:text-purple-800 hover:underline"
+          href="https://www.voiceone.com/"
+          target="_blank"
+          >Voice One</a
+        >
+        school in San Francisco. I moved to San Francisco 2 years ago and I'm an
+        active member of my community. I love NOPA and currently work at Voice
+        One and
+        <a
+          href="https://dog-walking-ee5r50fv8-hunterheston.vercel.app/"
+          target="_blank"
+          class="text-blue-800 visited:text-purple-800 hover:text-purple-800 hover:underline"
+          >pet sit</a
+        >
+        with my free time.
+      </p>
+    </main>
+    <footer class="w-full h-52 flex justify-center items-center">
+      <button
+        class="flex items-center h-fit bg-gradient-to-br from-purple-300 to-yellow-300 rounded-md px-4 py-2"
+      >
+        <a href="https://forms.gle/EArfmh8z8Gdomijc7" target="_blank"
+          >Contact Me</a
+        >
+        <svg
+          class="w-5 h-5"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"
+          />
+        </svg>
+      </button>
+    </footer>
+  </body>
 </html>

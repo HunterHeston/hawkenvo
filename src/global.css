@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.text-gradient {
+  background: linear-gradient(90deg, #FEB692 0%, #EA5455 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
